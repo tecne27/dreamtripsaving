@@ -72,39 +72,3 @@ export default function ReviewsDestino({ destinoId }) {
 
       {user ? (
         <form onSubmit={handleSubmit} className="flex flex-col gap-2">
-          <label className="font-semibold">Deixa a tua avaliação:</label>
-          <select
-            value={classificacao}
-            onChange={e => setClassificacao(Number(e.target.value))}
-            className="w-24"
-          >
-            {[5, 4, 3, 2, 1].map(v => (
-              <option key={v} value={v}>{v} ⭐</option>
-            ))}
-          </select>
-          <textarea
-            className="border rounded px-2 py-1"
-            rows={2}
-            placeholder="Escreve o teu comentário (apenas utilizadores autenticados)"
-            value={comentario}
-            onChange={e => setComentario(e.target.value)}
-            required
-          />
-          <button
-            type="submit"
-            className="bg-blue-700 text-white px-4 py-1 rounded hover:bg-blue-900"
-          >
-            Publicar Review
-          </button>
-        </form>
-      ) : (
-        <div className="text-gray-500 italic text-sm">
-          Só utilizadores autenticados podem deixar reviews. <br />
-          <span className="underline cursor-pointer" onClick={() => window.location.href='/login'}>
-            Iniciar Sessão
-          </span>
-        </div>
-      )}
-    </div>
-  );
-}

@@ -21,7 +21,6 @@ import PoliticaCookies from "./components/PoliticaCookies";
 import Faq from "./components/Faq";
 import Contacto from "./components/Contacto";
 import FooterLinks from "./components/FooterLinks";
-import Banner18 from "./components/Banner18";
 import CookieBanner from "./components/CookieBanner";
 
 function isAdmin(user) {
@@ -36,8 +35,7 @@ function App() {
 
   return (
     <Router>
-      {/* Banners legais para maiores de 18 e cookies */}
-      <Banner18 />
+      {/* Banner legal de cookies */}
       <CookieBanner />
 
       {currentUser && (

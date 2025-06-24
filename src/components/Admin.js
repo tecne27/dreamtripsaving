@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+
+// Importações dos subcomponentes de admin
 import AdminAnalytics from "./AdminAnalytics";
 import AdminReservas from "./AdminReservas";
 import AdminAnalyticsCharts from "./AdminAnalyticsCharts";
@@ -14,23 +16,34 @@ import AdminParceiros from "./AdminParceiros";
 import AdminBanners from "./AdminBanners";
 import AdminInfluencers from "./AdminInfluencers";
 
+// Proteção: mostra mensagem se algum componente não existir
+const safe = (Component, props = {}) =>
+  Component
+    ? <Component {...props} />
+    : (
+      <div className="p-12 text-red-700 font-bold text-xl text-center">
+        Erro: Este módulo de admin não existe ou não está disponível.<br />
+        (Confirma que todos os ficheiros do admin estão presentes em /src/components)
+      </div>
+    );
+
 export default function Admin() {
   const [pagina, setPagina] = useState("menu");
 
-  if (pagina === "analytics") return <AdminAnalytics onBack={() => setPagina("menu")} />;
-  if (pagina === "reservas") return <AdminReservas onBack={() => setPagina("menu")} />;
-  if (pagina === "analyticscharts") return <AdminAnalyticsCharts onBack={() => setPagina("menu")} />;
-  if (pagina === "analyticspdf") return <AdminAnalyticsPDF onBack={() => setPagina("menu")} />;
-  if (pagina === "destinos") return <AdminDestinos onBack={() => setPagina("menu")} />;
-  if (pagina === "users") return <AdminUsers onBack={() => setPagina("menu")} />;
-  if (pagina === "promocoes") return <AdminPromocoes onBack={() => setPagina("menu")} />;
-  if (pagina === "voluntariado") return <AdminVoluntariado onBack={() => setPagina("menu")} />;
-  if (pagina === "reviews") return <AdminReviews onBack={() => setPagina("menu")} />;
-  if (pagina === "logs") return <AdminLogs onBack={() => setPagina("menu")} />;
-  if (pagina === "lojas") return <AdminLojas onBack={() => setPagina("menu")} />;
-  if (pagina === "parceiros") return <AdminParceiros onBack={() => setPagina("menu")} />;
-  if (pagina === "banners") return <AdminBanners onBack={() => setPagina("menu")} />;
-  if (pagina === "influencers") return <AdminInfluencers onBack={() => setPagina("menu")} />;
+  if (pagina === "analytics") return safe(AdminAnalytics, { onBack: () => setPagina("menu") });
+  if (pagina === "reservas") return safe(AdminReservas, { onBack: () => setPagina("menu") });
+  if (pagina === "analyticscharts") return safe(AdminAnalyticsCharts, { onBack: () => setPagina("menu") });
+  if (pagina === "analyticspdf") return safe(AdminAnalyticsPDF, { onBack: () => setPagina("menu") });
+  if (pagina === "destinos") return safe(AdminDestinos, { onBack: () => setPagina("menu") });
+  if (pagina === "users") return safe(AdminUsers, { onBack: () => setPagina("menu") });
+  if (pagina === "promocoes") return safe(AdminPromocoes, { onBack: () => setPagina("menu") });
+  if (pagina === "voluntariado") return safe(AdminVoluntariado, { onBack: () => setPagina("menu") });
+  if (pagina === "reviews") return safe(AdminReviews, { onBack: () => setPagina("menu") });
+  if (pagina === "logs") return safe(AdminLogs, { onBack: () => setPagina("menu") });
+  if (pagina === "lojas") return safe(AdminLojas, { onBack: () => setPagina("menu") });
+  if (pagina === "parceiros") return safe(AdminParceiros, { onBack: () => setPagina("menu") });
+  if (pagina === "banners") return safe(AdminBanners, { onBack: () => setPagina("menu") });
+  if (pagina === "influencers") return safe(AdminInfluencers, { onBack: () => setPagina("menu") });
 
   return (
     <div className="p-6 max-w-3xl mx-auto">

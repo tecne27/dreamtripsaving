@@ -111,37 +111,8 @@ function MiniLojaInfluencer({ codigoInfluencer, email }) {
   );
 }
 
-function AnimatedSaldo({ saldo }) {
-  const [displaySaldo, setDisplaySaldo] = useState(saldo || 0);
-  useEffect(() => {
-    let frame;
-    let start = displaySaldo;
-    let end = saldo;
-    let duration = 500;
-    let startTime;
-    function animateSaldo(timestamp) {
-      if (!startTime) startTime = timestamp;
-      const progress = Math.min((timestamp - startTime) / duration, 1);
-      const value = start + (end - start) * progress;
-      setDisplaySaldo(Number(value.toFixed(2)));
-      if (progress < 1) {
-        frame = requestAnimationFrame(animateSaldo);
-      }
-    }
-    if (end !== start) {
-      frame = requestAnimationFrame(animateSaldo);
-    }
-    return () => frame && cancelAnimationFrame(frame);
-  }, [saldo]);
-  return (
-    <div className="font-bold text-xl text-green-700 bg-green-100 px-5 py-2 rounded-full shadow">
-      Saldo: {displaySaldo.toFixed(2)} €
-    </div>
-  );
-}
-
 export default function Dashboard() {
-  const { saldo, currentUser } = useAuth() || {};
+  const { currentUser } = useAuth() || {};
   const [mostrarLoja, setMostrarLoja] = useState(false);
 
   // Lê dados completos do utilizador (sempre atualizado do Firestore)
@@ -192,11 +163,14 @@ export default function Dashboard() {
     };
   }, []);
 
-  const todosDestinos = Array.isArray(destinos) && Array.isArray(pacotes)
-    ? [...destinos, ...pacotes]
-    : [];
+  // categoria não depende de setState interno
+  const todosDestinos = React.useMemo(() => (
+    Array.isArray(destinos) && Array.isArray(pacotes)
+      ? [...destinos, ...pacotes]
+      : []
+  ), [destinos, pacotes]);
 
-  const categorias = [
+  const categorias = React.useMemo(() => ([
     "Todos",
     ...Array.from(
       new Set(
@@ -212,10 +186,10 @@ export default function Dashboard() {
           )
       )
     ),
-  ];
+  ]), [todosDestinos]);
 
   const [categoriaSelecionada, setCategoriaSelecionada] = useState("Todos");
-  const destinosFiltrados =
+  const destinosFiltrados = React.useMemo(() => (
     categoriaSelecionada === "Todos"
       ? todosDestinos
       : todosDestinos.filter(
@@ -223,10 +197,12 @@ export default function Dashboard() {
             (Array.isArray(d.categoria)
               ? d.categoria.includes(categoriaSelecionada)
               : d.categoria === categoriaSelecionada)
-        );
+        )
+  ), [todosDestinos, categoriaSelecionada]);
 
   const [termoPesquisa, setTermoPesquisa] = useState("");
   const [resultadosPesquisa, setResultadosPesquisa] = useState([]);
+
   useEffect(() => {
     if (!termoPesquisa) {
       setResultadosPesquisa([]);
@@ -248,11 +224,6 @@ export default function Dashboard() {
   }, [termoPesquisa, todosDestinos]);
 
   const carrosselRef = useRef();
-  const scrollCarrossel = (offset) => {
-    if (carrosselRef.current) {
-      carrosselRef.current.scrollBy({ left: offset, behavior: "smooth" });
-    }
-  };
 
   // Mostra o botão para influencers se tem role e código influencer
   const isInfluencer = userData && userData.role === "influencer" && userData.codigoInfluencer;
@@ -261,7 +232,6 @@ export default function Dashboard() {
     <div className="relative min-h-screen bg-gradient-to-b from-blue-50 via-white to-gray-100" style={{ paddingLeft: 80 }}>
       <div className="flex justify-between items-center px-6 py-3 bg-white shadow-sm sticky top-0 z-20">
         <span className="text-xl font-extrabold text-blue-700">DreamTripSavings</span>
-        <AnimatedSaldo saldo={saldo} />
       </div>
 
       <Banners />
@@ -323,28 +293,12 @@ export default function Dashboard() {
       </AnimatePresence>
 
       <div className="max-w-7xl mx-auto px-4 py-10">
-        <div className="flex items-center justify-between mb-2">
+        <div className="mb-2">
           <h2 className="text-2xl font-bold text-blue-700">
             {categoriaSelecionada === "Todos"
               ? "Explorar destinos e pacotes"
               : `Explorar categoria: ${categoriaSelecionada}`}
           </h2>
-          <div className="flex gap-2">
-            <button
-              className="bg-blue-200 text-blue-700 rounded-full p-2 hover:bg-blue-300 transition"
-              onClick={() => scrollCarrossel(-350)}
-              aria-label="Scroll esquerda"
-            >
-              ◀
-            </button>
-            <button
-              className="bg-blue-200 text-blue-700 rounded-full p-2 hover:bg-blue-300 transition"
-              onClick={() => scrollCarrossel(350)}
-              aria-label="Scroll direita"
-            >
-              ▶
-            </button>
-          </div>
         </div>
         <motion.div
           ref={carrosselRef}

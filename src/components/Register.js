@@ -11,8 +11,6 @@ const imagensFundo = [
 ];
 const getRandomIndex = () => Math.floor(Math.random() * imagensFundo.length);
 
-const VALOR_BONUS_CONVITE = 5;
-
 const Register = () => {
   const [imgIndex] = useState(getRandomIndex());
   const [email, setEmail] = useState("");
@@ -44,7 +42,6 @@ const Register = () => {
     }
     setLoading(true);
     try {
-      // O campo convite pode ser código de influencer ou de convite normal.
       await register(email, password, nome, convite);
       setSucesso("Conta criada com sucesso! Bem-vindo à DreamTripSavings!");
       setTimeout(() => {
@@ -56,10 +53,9 @@ const Register = () => {
     setLoading(false);
   };
 
-  const mensagemOferta =
-    convite.trim()
-      ? `🎁 Ganhas automaticamente +${VALOR_BONUS_CONVITE}€ no saldo inicial!`
-      : "Tens código de convite ou de influencer? Ganha saldo bónus ao registar!";
+  const mensagemOferta = convite.trim()
+    ? `Código de convite reconhecido!`
+    : "Tens código de convite ou de influencer? Usa-o aqui (opcional).";
 
   return (
     <div

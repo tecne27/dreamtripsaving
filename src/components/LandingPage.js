@@ -1,13 +1,12 @@
 import React from "react";
-import landingData from "../cms/landing.json"; // ajusta o caminho se for preciso
+import landingData from "../cms/landing.json"; // Ajusta o caminho se necessário
 
 export default function LandingPage() {
+  // Ignoramos stats e qualquer referência a saldo
   const {
-    headline,
-    subheadline,
+    headline = "Viajar começa aqui.",
+    subheadline = "Explora, compara e reserva experiências incríveis em todo o mundo. Encontra pacotes de viagem para todos os gostos — sem taxas escondidas e sem compromisso.",
     backgroundImage,
-    showStats,
-    stats,
     showPartners,
     partners
   } = landingData;
@@ -39,11 +38,6 @@ export default function LandingPage() {
             Login
           </a>
         </div>
-        {showStats && (
-          <span className="text-sm text-gray-200 mt-4">
-            {stats}
-          </span>
-        )}
         {showPartners && partners && partners.length > 0 && (
           <div className="flex gap-4 mt-6 justify-center">
             {partners.map((partner, idx) => (

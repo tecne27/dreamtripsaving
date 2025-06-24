@@ -15,8 +15,8 @@ export default function FooterLinks() {
         <span className="font-semibold">DreamTripSavings</span> &copy; {new Date().getFullYear()} — Ricardo Fernandes. Todos os direitos reservados.
       </div>
       <div className="text-xs text-gray-500">
-        Este site pode receber comissão por vendas/afiliações.<br />
-        Reservas de pacotes são feitas diretamente com a nossa equipa; produtos de parceiros são externos.
+        Este site pode receber comissão por reservas feitas através de links de parceiros.<br />
+        Todas as reservas são processadas diretamente nos sites dos parceiros oficiais.
       </div>
     </footer>
   );

@@ -2,49 +2,41 @@ import React from "react";
 
 const faqs = [
   {
-    pergunta: "O que é o DreamTripSavings?",
-    resposta: "O DreamTripSavings é uma plataforma portuguesa que permite juntar saldo e reservar pacotes de viagem de forma flexível, inovadora e segura. Além disso, oferecemos acesso a produtos de parceiros externos nas nossas lojas."
+    pergunta: "O que é o DreamTripSaving?",
+    resposta: "O DreamTripSaving é uma plataforma portuguesa onde podes encontrar, comparar e reservar viagens e experiências em todo o mundo. Não vendemos viagens diretamente — somos o teu ponto de partida para descobrir opções incríveis e reservar com os nossos parceiros de confiança."
   },
   {
-    pergunta: "Como posso carregar saldo?",
-    resposta: "O saldo pode ser carregado com cartão através do Stripe na área de utilizador, de forma segura. Todo o saldo fica disponível na sua conta para usar em pacotes de viagem."
+    pergunta: "Tenho de pagar alguma coisa para usar o site?",
+    resposta: "Não. O DreamTripSaving é totalmente gratuito para utilizadores. Só pagas diretamente aos nossos parceiros no momento da reserva, nunca ao nosso site."
   },
   {
-    pergunta: "Como posso reservar um pacote de viagem?",
-    resposta: "Após juntar saldo suficiente, pode selecionar o pacote pretendido, preencher os dados necessários para a reserva e finalizar o pagamento usando o seu saldo."
+    pergunta: "Que tipo de viagens posso encontrar?",
+    resposta: "Encontras de tudo: viagens económicas, de luxo, escapadinhas, aventuras, experiências culturais, férias em família e muito mais — sempre com várias opções de preço e flexibilidade."
   },
   {
-    pergunta: "O que acontece se cancelar a minha reserva?",
-    resposta: "O cancelamento de reservas está sujeito às condições do pacote e dos parceiros envolvidos. Consulte sempre os Termos antes de efetuar qualquer pagamento. Para pedidos, contacte o suporte."
+    pergunta: "Como faço uma reserva?",
+    resposta: "Quando encontrares uma viagem que gostes, basta clicares em 'Reservar' e serás redirecionado para o site do parceiro (Booking, Skyscanner, Omio, etc.), onde podes completar a reserva em segurança."
   },
   {
-    pergunta: "Como funcionam as mini-lojas dos influencers?",
-    resposta: "Os influencers registados podem criar e gerir a sua própria mini-loja, apresentando produtos ou experiências a que os seus seguidores podem aceder. As vendas diretas são feitas fora do site, através dos parceiros indicados."
+    pergunta: "O DreamTripSaving cobra alguma comissão ou taxa nas reservas?",
+    resposta: "Não. Não cobramos taxas aos utilizadores. Em alguns casos, recebemos uma pequena comissão dos parceiros, mas o preço para ti é sempre o mesmo."
   },
   {
-    pergunta: "É seguro pagar no DreamTripSavings?",
-    resposta: "Sim. O carregamento de saldo é feito através do Stripe, uma plataforma internacional segura. Não guardamos dados bancários dos utilizadores."
+    pergunta: "É seguro reservar através do site?",
+    resposta: "Sim, só trabalhamos com parceiros reconhecidos e plataformas de confiança a nível mundial. Todas as reservas são feitas diretamente nos sites dos parceiros, com total transparência."
   },
   {
-    pergunta: "Posso apagar a minha conta?",
-    resposta: "Sim, basta enviar um email para dreamtripsavingsbook@gmail.com a solicitar a eliminação da conta. Alertamos que a eliminação é permanente e irá perder todo o saldo disponível."
+    pergunta: "Posso encontrar viagens para qualquer destino?",
+    resposta: "Trabalhamos constantemente para alargar a oferta de destinos e experiências. Podes procurar viagens para praticamente qualquer parte do mundo!"
   },
   {
-    pergunta: "Quem pode usar o DreamTripSavings?",
-    resposta: "Apenas maiores de 18 anos podem realizar reservas e carregar saldo. Produtos de parceiros estão sujeitos às condições desses sites."
-  },
-  {
-    pergunta: "O DreamTripSavings guarda os meus dados bancários?",
-    resposta: "Não. Todos os pagamentos de saldo são processados pelo Stripe, não temos acesso nem guardamos informações bancárias."
+    pergunta: "Posso sugerir um destino ou experiência?",
+    resposta: "Claro! Adoramos sugestões. Entra em contacto connosco para partilhares as tuas ideias ou destinos de sonho."
   },
   {
     pergunta: "Como funciona o suporte?",
     resposta: "O suporte é feito por email (dreamtripsavingsbook@gmail.com) ou WhatsApp (+351 937765649)."
-  },
-  {
-    pergunta: "Qual a diferença entre pacotes e produtos da loja?",
-    resposta: "Os pacotes de viagem são geridos diretamente por nós e pagos através do saldo. Os produtos de parceiros são vendidos em sites externos, com pagamento e entrega geridos pelo parceiro."
-  },
+  }
 ];
 
 export default function Faq() {

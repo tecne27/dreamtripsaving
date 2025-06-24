@@ -21,3 +21,20 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Node modules e ambiente
+node_modules/
+.env*
+.env.local
+
+# Chaves e ficheiros sensíveis
+functions/serviceAccountKey.json
+functions/chave-admin.json
+
+# Ficheiros de log
+*.log
+
+# Pastas temporárias/react
+dist/
+build/
+

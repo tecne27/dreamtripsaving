@@ -2,75 +2,34 @@ import React from "react";
 
 export default function PoliticaPrivacidade() {
   return (
-    <div className="max-w-3xl mx-auto px-4 py-10">
-      <h1 className="text-3xl font-bold mb-6 text-blue-800">Política de Privacidade</h1>
-      <p className="mb-5">
-        A sua privacidade é importante para nós. Esta política explica como recolhemos, utilizamos, partilhamos e protegemos os seus dados pessoais, em conformidade com o Regulamento Geral de Proteção de Dados (RGPD) e legislação portuguesa.
+    <div className="max-w-3xl mx-auto px-4 py-12">
+      <h1 className="text-3xl font-bold mb-8 text-blue-800">Política de Privacidade</h1>
+      <p className="mb-4">
+        A tua privacidade é importante para nós! Esta página explica de forma simples como tratamos a tua informação.
       </p>
-
-      <h2 className="text-xl font-bold mt-6 mb-2">1. Responsável pelo Tratamento</h2>
-      <p className="mb-3">
-        Ricardo Fernandes — DreamTripSavings<br />
-        Portugal<br />
-        Email: dreamtripsavingsbook@gmail.com<br />
-        WhatsApp: +351 937765649
+      <h2 className="text-xl font-bold mt-8 mb-2">Que dados recolhemos?</h2>
+      <p className="mb-4">
+        Apenas recolhemos o mínimo necessário: o teu email para criar conta, e o teu nome se quiseres partilhar. Também podemos recolher feedback ou sugestões que envies, sempre com o teu consentimento.
       </p>
-
-      <h2 className="text-xl font-bold mt-6 mb-2">2. Dados que Recolhemos</h2>
-      <ul className="list-disc pl-6 mb-3">
-        <li>Email, nome e dados de registo fornecidos ao criar conta.</li>
-        <li>Informação de saldo, transações e reservas feitas no site.</li>
-        <li>Dados de contacto fornecidos para suporte ou pedidos especiais.</li>
-        <li>Nunca guardamos dados bancários — pagamentos são processados exclusivamente pelo Stripe.</li>
-        <li>Poderemos recolher cookies funcionais e analíticos (ver política de cookies).</li>
-      </ul>
-
-      <h2 className="text-xl font-bold mt-6 mb-2">3. Para que finalidades utilizamos os dados?</h2>
-      <ul className="list-disc pl-6 mb-3">
-        <li>Gestão da conta e saldo.</li>
-        <li>Gestão de reservas, pacotes de viagem e pedidos de suporte.</li>
-        <li>Envio de comunicações essenciais sobre o serviço.</li>
-        <li>Cumprimento de obrigações legais e fiscais.</li>
-        <li>Melhoria contínua da plataforma.</li>
-      </ul>
-
-      <h2 className="text-xl font-bold mt-6 mb-2">4. Partilha de Dados</h2>
-      <p className="mb-3">
-        Só partilhamos os seus dados com:
-        <ul className="list-disc pl-6">
-          <li>Empresas/parceiros envolvidos na reserva dos pacotes (apenas o necessário para a reserva).</li>
-          <li>Plataformas de pagamento seguras (Stripe) — não recebemos dados bancários.</li>
-          <li>Entidades oficiais, se exigido por lei.</li>
-        </ul>
+      <h2 className="text-xl font-bold mt-8 mb-2">Como usamos os teus dados?</h2>
+      <p className="mb-4">
+        Usamos os dados só para te dar acesso à tua conta, responder a pedidos de suporte e melhorar o site. Não partilhamos nem vendemos os teus dados a terceiros.
       </p>
-
-      <h2 className="text-xl font-bold mt-6 mb-2">5. Direitos do Utilizador</h2>
-      <ul className="list-disc pl-6 mb-3">
-        <li>Aceder, corrigir ou atualizar os seus dados.</li>
-        <li>Pedir eliminação da conta (via email para dreamtripsavingsbook@gmail.com).</li>
-        <li>Retirar consentimento para comunicações não essenciais.</li>
-        <li>Solicitar portabilidade dos dados.</li>
-        <li>Opor-se a determinados tratamentos.</li>
-      </ul>
-
-      <h2 className="text-xl font-bold mt-6 mb-2">6. Segurança</h2>
-      <p className="mb-3">
-        Usamos medidas técnicas e organizativas para proteger os dados. O acesso é restrito e todas as transações são cifradas. Não guardamos dados bancários.
+      <h2 className="text-xl font-bold mt-8 mb-2">Reservas e parceiros</h2>
+      <p className="mb-4">
+        Quando fazes uma reserva através do DreamTripSavings, és sempre redirecionado para o site do parceiro. Não recebemos nem processamos dados dessas reservas — tudo é tratado diretamente com o parceiro escolhido.
       </p>
-
-      <h2 className="text-xl font-bold mt-6 mb-2">7. Menores de Idade</h2>
-      <p className="mb-3">
-        O site destina-se apenas a maiores de 18 anos. Não processamos dados de menores conscientemente.
+      <h2 className="text-xl font-bold mt-8 mb-2">Cookies e analytics</h2>
+      <p className="mb-4">
+        Usamos cookies só para melhorar a tua experiência e analisar estatísticas de visitas. Podes saber mais na nossa <a className="underline text-blue-700" href="/politica-cookies">Política de Cookies</a>.
       </p>
-
-      <h2 className="text-xl font-bold mt-6 mb-2">8. Alterações a esta Política</h2>
-      <p className="mb-3">
-        Reservamo-nos o direito de alterar esta política a qualquer momento. Quaisquer alterações serão publicadas nesta página.
+      <h2 className="text-xl font-bold mt-8 mb-2">Os teus direitos</h2>
+      <p className="mb-4">
+        Podes pedir para apagar a tua conta e dados a qualquer momento. Basta enviares email para dreamtripsavingsbook@gmail.com e tratamos disso.
       </p>
-
-      <h2 className="text-xl font-bold mt-6 mb-2">9. Contacto</h2>
+      <h2 className="text-xl font-bold mt-8 mb-2">Dúvidas?</h2>
       <p>
-        Para exercer direitos ou esclarecer dúvidas, contacte: dreamtripsavingsbook@gmail.com ou WhatsApp: +351 937765649.
+        Para qualquer questão, contacta-nos: dreamtripsavingsbook@gmail.com
       </p>
     </div>
   );
