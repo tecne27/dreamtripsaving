@@ -1,0 +1,257 @@
+[
+  {
+    "id": "porto-3d2n-exclusivo",
+    "nome": "Porto Exclusivo: 3 dias, 2 noites, experiência Douro",
+    "categoria": "Cultural",
+    "descricao": "Descobre o melhor do Porto com hotel 4*, passeio de barco no Douro, visita a caves e city tour. Tudo incluído e pronto a reservar.",
+    "precoDreamTripSavings": 799,
+    "precoSeparado": 975,
+    "poupanca": 176,
+    "inclui": [
+      "2 noites hotel 4* com pequeno-almoço",
+      "Passeio de barco 6 pontes Douro",
+      "Tour guiado a pé pelo centro histórico",
+      "Visita e prova nas caves de vinho do Porto",
+      "Transfer estação/hotel/estação",
+      "Seguro viagem"
+    ],
+    "ofertaExtra": "Upgrade de quarto grátis",
+    "linkCompra": "https://www.viator.com/pt-PT/tours/Porto/Porto-in-3-Days-Private-Tour/d26879-163632P15",
+    "imagens": [
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+    ],
+    "bonusPontos": 80
+  },
+  {
+    "id": "paris-romantico-5d4n",
+    "nome": "Paris Romântico: 5 dias de sonho para 2 pessoas",
+    "categoria": "Luxo",
+    "descricao": "Voo, hotel boutique no centro, jantar cruzeiro no Sena, entrada prioritária Torre Eiffel e tour em Montmartre.",
+    "precoDreamTripSavings": 1890,
+    "precoSeparado": 2260,
+    "poupanca": 370,
+    "inclui": [
+      "Voo direto Lisboa-Paris ida e volta",
+      "4 noites hotel boutique 4* central, pequeno-almoço incluído",
+      "Jantar cruzeiro no Sena",
+      "Bilhete prioritário Torre Eiffel",
+      "Tour Montmartre + degustação de vinhos",
+      "Transfer privado aeroporto/hotel",
+      "Seguro viagem"
+    ],
+    "ofertaExtra": "Sessão fotográfica profissional junto à Torre Eiffel",
+    "linkCompra": "https://www.expedia.pt/Paris-Hoteis.d179898.Viagens-Paris",
+    "imagens": [
+      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80"
+    ],
+    "bonusPontos": 200
+  },
+  {
+    "id": "algarve-allinc-7n",
+    "nome": "Algarve All Inclusive 7 noites no Club Med",
+    "categoria": "Praia",
+    "descricao": "Férias sem preocupações no melhor all inclusive do Algarve com spa, cocktails, e aulas incluídas.",
+    "precoDreamTripSavings": 1450,
+    "precoSeparado": 1820,
+    "poupanca": 370,
+    "inclui": [
+      "7 noites Club Med Da Balaia, tudo incluído",
+      "Refeições buffet e snacks ilimitados",
+      "Piscina, spa, atividades e aulas de fitness",
+      "Transfers do aeroporto de Faro",
+      "Seguro viagem"
+    ],
+    "ofertaExtra": "Aula de surf + pack spa",
+    "linkCompra": "https://www.clubmed.pt/r/Da-Balaia/y",
+    "imagens": [
+      "https://www.clubmed.pt/sites/default/files/styles/portfolio_image/public/2024-05/Da_Balaia_gallery1.jpg"
+    ],
+    "bonusPontos": 160
+  },
+  {
+    "id": "madeira-nature-escapadinha",
+    "nome": "Madeira Natureza e Spa: 4 dias para dois",
+    "categoria": "Aventura",
+    "descricao": "Explore a ilha da Madeira com hotel spa, tour levadas e piscina infinita. Inclui voo e transfers.",
+    "precoDreamTripSavings": 990,
+    "precoSeparado": 1185,
+    "poupanca": 195,
+    "inclui": [
+      "Voo Lisboa-Funchal ida e volta",
+      "3 noites hotel 4* spa frente-mar",
+      "Tour levadas (caminhada guiada)",
+      "Passeio de catamarã para observação de golfinhos",
+      "Pequeno-almoço incluído",
+      "Transfer aeroporto/hotel",
+      "Seguro viagem"
+    ],
+    "ofertaExtra": "Massagem relaxante para duas pessoas",
+    "linkCompra": "https://www.getyourguide.com/funchal-l1026/from-funchal-levada-walk-queimadas-to-caldeirao-verde-t58145/",
+    "imagens": [
+      "https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=800&q=80"
+    ],
+    "bonusPontos": 110
+  },
+  {
+    "id": "lisboa-cultural-escapadinha",
+    "nome": "Lisboa Cultural: 3 dias de descoberta",
+    "categoria": "Cultural",
+    "descricao": "Hotel central, passes para museus, jantar de fado, city tour elétrico e entrada no Oceanário.",
+    "precoDreamTripSavings": 599,
+    "precoSeparado": 735,
+    "poupanca": 136,
+    "inclui": [
+      "2 noites hotel 3* central",
+      "Passe city tour elétrico 48h",
+      "Jantar de fado no Bairro Alto",
+      "Bilhete Oceanário de Lisboa",
+      "Visita guiada Mosteiro dos Jerónimos",
+      "Seguro viagem"
+    ],
+    "ofertaExtra": "Welcome drink e pastel de nata",
+    "linkCompra": "https://www.getyourguide.com/lisbon-l42/lisboa-tours-tickets/?visitor-id=F8AA62",
+    "imagens": [
+      "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "bonusPontos": 60
+  },
+  {
+    "id": "barcelona-lowcost-escapadinha",
+    "nome": "Barcelona Low Cost: 4 dias para 2",
+    "categoria": "Low Cost",
+    "descricao": "Voo, hostel central, entradas Sagrada Família, city tour, jantar tapas e transfers incluídos.",
+    "precoDreamTripSavings": 510,
+    "precoSeparado": 690,
+    "poupanca": 180,
+    "inclui": [
+      "Voo Porto-Barcelona ida e volta",
+      "3 noites hostel central",
+      "City tour guiado + bilhete Sagrada Família",
+      "Jantar tapas (1 noite)",
+      "Transfer aeroporto/hostel",
+      "Seguro viagem"
+    ],
+    "ofertaExtra": "Cartão metro ilimitado 72h",
+    "linkCompra": "https://www.civitatis.com/pt/barcelona/visita-guiada-barcelona/?aid=1555",
+    "imagens": [
+      "https://images.unsplash.com/photo-1465156799763-2c087c332922?auto=format&fit=crop&w=800&q=80"
+    ],
+    "bonusPontos": 50
+  },
+  {
+    "id": "douro-cruzeiro-2d1n",
+    "nome": "Douro Cruzeiro Romântico 2 dias, 1 noite",
+    "categoria": "Experiências Únicas",
+    "descricao": "Mini-cruzeiro no Douro com noite em quinta vínica, prova de vinhos e refeições.",
+    "precoDreamTripSavings": 370,
+    "precoSeparado": 460,
+    "poupanca": 90,
+    "inclui": [
+      "1 noite em quinta vínica (quarto duplo, pequeno-almoço)",
+      "Cruzeiro barco-rabelo Régua-Pinhão",
+      "Jantar vínico harmonizado",
+      "Visita e prova nas caves",
+      "Transfer de regresso",
+      "Seguro viagem"
+    ],
+    "ofertaExtra": "Pack degustação Porto vintage",
+    "linkCompra": "https://www.viator.com/pt-PT/tours/Porto/Douro-Valley-Small-Group-Tour-with-Wine-Tasting-and-Lunch/d26879-7585P12",
+    "imagens": [
+      "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80"
+    ],
+    "bonusPontos": 40
+  },
+  {
+    "id": "roma-cultural-4d3n",
+    "nome": "Roma Essencial: 4 dias para 2",
+    "categoria": "Cultural",
+    "descricao": "Voo, hotel 4*, entradas Coliseu, Vaticano, tour guiado e jantar italiano tradicional.",
+    "precoDreamTripSavings": 1180,
+    "precoSeparado": 1390,
+    "poupanca": 210,
+    "inclui": [
+      "Voo Lisboa-Roma ida e volta",
+      "3 noites hotel 4* no centro",
+      "Entrada prioritária Coliseu & Vaticano",
+      "City tour guiado + transfer aeroporto",
+      "Jantar típico italiano",
+      "Seguro viagem"
+    ],
+    "ofertaExtra": "Gelado grátis e mapa personalizado",
+    "linkCompra": "https://www.getyourguide.com/rome-l33/colosseum-vatican-best-of-rome-t173115/",
+    "imagens": [
+      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80"
+    ],
+    "bonusPontos": 90
+  },
+  {
+    "id": "madrid-eventos-festival",
+    "nome": "Madrid Festivais & Cultura: 4 dias",
+    "categoria": "Eventos/Festas",
+    "descricao": "Viagem a Madrid com entradas para concerto/festival à escolha, hotel e city tour.",
+    "precoDreamTripSavings": 799,
+    "precoSeparado": 970,
+    "poupanca": 171,
+    "inclui": [
+      "Voo Porto-Madrid ida e volta",
+      "3 noites hotel 3* central",
+      "Bilhete festival/concert à escolha",
+      "Tour guiado tapas e vinhos",
+      "Transfer aeroporto/hotel",
+      "Seguro viagem"
+    ],
+    "ofertaExtra": "Voucher drinks bar rooftop",
+    "linkCompra": "https://www.getyourguide.com/madrid-l46/nightlife-tours-tc109/?visitor-id=F8AA62",
+    "imagens": [
+      "https://images.unsplash.com/photo-1503676382389-4809596d529b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "bonusPontos": 70
+  },
+  {
+    "id": "azores-aventura-5d4n",
+    "nome": "Açores Selvagem: 5 dias para 2",
+    "categoria": "Aventura",
+    "descricao": "Voo, eco-hotel, aluguer de carro, trilhos, observação de baleias, termas e experiência gastronómica.",
+    "precoDreamTripSavings": 1180,
+    "precoSeparado": 1420,
+    "poupanca": 240,
+    "inclui": [
+      "Voo Lisboa-Ponta Delgada ida e volta",
+      "4 noites eco-hotel 4* com pequeno-almoço",
+      "Aluguer de carro 4 dias",
+      "Caminhada guiada Sete Cidades",
+      "Passeio barco observação de baleias",
+      "Termas das Furnas (entrada incluída)",
+      "Seguro viagem"
+    ],
+    "ofertaExtra": "Cozido das Furnas grátis",
+    "linkCompra": "https://www.viator.com/tours/Ponta-Delgada/Full-Day-Sete-Cidades-and-Lagoa-do-Fogo/d22380-22151P10",
+    "imagens": [
+      "https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=800&q=80"
+    ],
+    "bonusPontos": 110
+  },
+  {
+    "id": "funchal-reveillon-escapadela",
+    "nome": "Funchal Réveillon 4 noites All-Inclusive",
+    "categoria": "Festas/Eventos",
+    "descricao": "Pacote especial Ano Novo com hotel 4* all-inclusive, jantar de gala e lugar VIP no fogo de artifício.",
+    "precoDreamTripSavings": 1450,
+    "precoSeparado": 1720,
+    "poupanca": 270,
+    "inclui": [
+      "Voo Porto-Funchal ida e volta",
+      "4 noites hotel 4* all-inclusive",
+      "Jantar gala réveillon com música ao vivo",
+      "Lugar VIP para ver o fogo-de-artifício",
+      "Transfers aeroporto/hotel",
+      "Seguro viagem"
+    ],
+    "ofertaExtra": "Passeio de catamarã oferta no dia 2",
+    "linkCompra": "https://www.getyourguide.com/funchal-l1026/new-year-s-eve-fireworks-catamaran-cruise-t151226/",
+    "imagens": [
+      "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "bonusPontos": 140
+  }
+]

@@ -1,0 +1,29 @@
+backend:
+  name: git-gateway
+  branch: main # ou 'master' conforme o teu repositório
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "landing"
+    label: "Landing Page"
+    files:
+      - file: "src/cms/landing.json"
+        label: "Landing"
+        name: "landing"
+        fields:
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Subheadline", name: "subheadline", widget: "string" }
+          - { label: "Imagem de Fundo", name: "backgroundImage", widget: "image" }
+          - { label: "Mostrar Estatística?", name: "showStats", widget: "boolean", default: true }
+          - { label: "Estatística", name: "stats", widget: "string", required: false }
+          - { label: "Mostrar Parceiros?", name: "showPartners", widget: "boolean", default: false }
+          - label: "Parceiros"
+            name: "partners"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Nome", name: "name", widget: "string" }
+              - { label: "Logo", name: "logo", widget: "image" }
+              - { label: "Link", name: "link", widget: "string" }

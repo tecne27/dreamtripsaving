@@ -1,0 +1,78 @@
+
+const { initializeApp } = require('firebase/app');
+const { getFirestore, doc, setDoc, collection } = require('firebase/firestore');
+const firebaseConfig = require('./firebaseConfig.json'); // Substituir pelo teu config
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+async function importarViagem() {
+  const cidadeRef = doc(db, 'viagensDetalhadas', 'porto');
+  await setDoc(cidadeRef, {
+    nome: "Porto",
+    capa: "https://images.unsplash.com/photo-1549924231-f129b911e442"
+  });
+
+  const subcategorias = {
+    onde_comer: {
+      titulo: "Onde Comer",
+      itens: [
+        {
+          nome: "Francesinha",
+          descricao: "A clássica sanduíche do Porto, coberta com molho especial.",
+          imagem: "https://upload.wikimedia.org/wikipedia/commons/2/2b/Francesinha.jpg",
+          link: "https://www.thefork.pt/restaurantes?q=francesinha%20porto"
+        },
+        {
+          nome: "Tripas à moda do Porto",
+          descricao: "Um prato tradicional com feijão, carne e enchidos.",
+          imagem: "https://upload.wikimedia.org/wikipedia/commons/1/13/Tripas_%C3%A0_moda_do_Porto.jpg",
+          link: "https://www.thefork.pt/restaurantes?q=tripas%20porto"
+        }
+      ]
+    },
+    o_que_fazer: {
+      titulo: "O que Fazer",
+      itens: [
+        {
+          nome: "Passeio na Ribeira",
+          descricao: "Explora a zona histórica junto ao Douro.",
+          imagem: "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b",
+          link: "https://visitporto.travel"
+        },
+        {
+          nome: "Livraria Lello",
+          descricao: "Uma das livrarias mais bonitas do mundo.",
+          imagem: "https://upload.wikimedia.org/wikipedia/commons/e/e6/Livraria_Lello_interior.jpg",
+          link: "https://www.livrarialello.pt"
+        }
+      ]
+    },
+    eventos: {
+      titulo: "Eventos",
+      itens: [
+        {
+          nome: "São João do Porto",
+          descricao: "A festa mais popular da cidade, celebrada em junho.",
+          imagem: "https://images.unsplash.com/photo-1655232806766-0370b435c969",
+          link: "https://www.porto.pt"
+        },
+        {
+          nome: "Primavera Sound Porto",
+          descricao: "Festival de música alternativa e indie em junho.",
+          imagem: "https://images.unsplash.com/photo-1497493292307-31c376b6e479",
+          link: "https://www.primaverasound.com/pt/porto"
+        }
+      ]
+    }
+  };
+
+  for (const key in subcategorias) {
+    const subRef = doc(collection(db, 'viagensDetalhadas', 'porto', 'subcategorias'), key);
+    await setDoc(subRef, subcategorias[key]);
+  }
+
+  console.log("✅ Viagem 'Porto' importada com sucesso!");
+}
+
+importarViagem();
